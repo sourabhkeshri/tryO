@@ -1,0 +1,7 @@
+<h1>Index</h1>
+<% @recipes.each do |recipe| %>
+	<%= link_to recipe.title, recipe %><br><hr>
+
+
+<% end %><br>
+<%= link_to 'create new', new_recipe_path %>

@@ -1,0 +1,19 @@
+<%= form_with scope: :recipe, url: recipes_path, local: true do |f| %>
+	<p>
+		
+		<%= f.label :title  %>
+		<%= f.text_field :title  %>
+
+	</p><br>
+
+	<p>
+		<%= f.label :desc  %>
+		<%= f.text_area :desc  %>
+		
+		
+	</p><br>
+
+	<p>
+		<%= f.submit %>
+	</p>
+<% end %>
